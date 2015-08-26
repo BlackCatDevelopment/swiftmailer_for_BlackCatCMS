@@ -44,13 +44,13 @@ $module_directory    = 'lib_swift';
 $module_name         = 'Swift Mailer Library';
 $module_function     = 'library';
 $library_function    = 'mail';
-$module_version      = '1.4';
+$module_version      = '1.5';
 $module_platform     = '1.x';
 $module_requirements = 'PHP 5.2 or higher, with the SPL extension';
 $module_author 		 = 'Chris Corbyn (Swift Library); Black Cat CMS Development (Module)';
 $module_home		 = 'http://blackcat-cms.org';
 $module_license 	 = 'GNU General Public License';
-$module_description  = 'Swift Mailer for Black Cat CMS (v5.3.1)';
+$module_description  = 'Swift Mailer for Black Cat CMS (v5.4.1)';
 $module_guid         = '51A8BC35-171D-44AF-8284-2D86862B22C3';
 
 ?>
