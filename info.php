@@ -15,42 +15,49 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  *
  *   @author          Black Cat Development
- *   @copyright       2013, Black Cat Development
- *   @link            http://blackcat-cms.org
- *   @license         http://www.gnu.org/licenses/gpl.html
+ *   @copyright       2022, Black Cat Development
+ *   @link            https://blackcat-cms.org
+ *   @license         https://www.gnu.org/licenses/gpl.html
  *   @category        CAT_Module
  *   @package         lib_swift
  *
  */
 
-if (defined('CAT_PATH')) {
-	include(CAT_PATH.'/framework/class.secure.php');
+if (defined("CAT_PATH")) {
+    include CAT_PATH . "/framework/class.secure.php";
 } else {
-	$oneback = "../";
-	$root = $oneback;
-	$level = 1;
-	while (($level < 10) && (!file_exists($root.'/framework/class.secure.php'))) {
-		$root .= $oneback;
-		$level += 1;
-	}
-	if (file_exists($root.'/framework/class.secure.php')) {
-		include($root.'/framework/class.secure.php');
-	} else {
-		trigger_error(sprintf("[ <b>%s</b> ] Can't include class.secure.php!", $_SERVER['SCRIPT_NAME']), E_USER_ERROR);
-	}
+    $oneback = "../";
+    $root = $oneback;
+    $level = 1;
+    while ($level < 10 && !file_exists($root . "/framework/class.secure.php")) {
+        $root .= $oneback;
+        $level += 1;
+    }
+    if (file_exists($root . "/framework/class.secure.php")) {
+        include $root . "/framework/class.secure.php";
+    } else {
+        trigger_error(
+            sprintf(
+                "[ <b>%s</b> ] Can't include class.secure.php!",
+                $_SERVER["SCRIPT_NAME"]
+            ),
+            E_USER_ERROR
+        );
+    }
 }
 
-$module_directory    = 'lib_swift';
-$module_name         = 'Swift Mailer Library';
-$module_function     = 'library';
-$library_function    = 'mail';
-$module_version      = '1.5';
-$module_platform     = '1.x';
-$module_requirements = 'PHP 5.2 or higher, with the SPL extension';
-$module_author 		 = 'Chris Corbyn (Swift Library); Black Cat CMS Development (Module)';
-$module_home		 = 'http://blackcat-cms.org';
-$module_license 	 = 'GNU General Public License';
-$module_description  = 'Swift Mailer for Black Cat CMS (v5.4.1)';
-$module_guid         = '51A8BC35-171D-44AF-8284-2D86862B22C3';
+$module_directory = "lib_swift";
+$module_name = "Swift Mailer Library";
+$module_function = "library";
+$library_function = "mail";
+$module_version = "1.6";
+$module_platform = "1.5.x";
+$module_requirements = "PHP 5.2 or higher, with the SPL extension";
+$module_author =
+    "Chris Corbyn (Swift Library); Black Cat CMS Development (Module)";
+$module_home = "http://blackcat-cms.org";
+$module_license = "GNU General Public License";
+$module_description = "Swift Mailer for Black Cat CMS (v6.3.0)";
+$module_guid = "51A8BC35-171D-44AF-8284-2D86862B22C3";
 
 ?>

@@ -1,4 +1,4 @@
-swiftmailer_4_BlackCatCMS
+swiftmailer_6_BlackCatCMS
 =========================
 
 Swift Mailer library module for use with BlackCat CMS
